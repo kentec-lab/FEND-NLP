@@ -15,10 +15,9 @@ A web tool that allows users to run Natural Language Processing (NLP) on article
 * JS files are tested with Jest.
 
 ## Getting Started
-For Production Mode: 
+* For Production Mode: 
 Use `npm run build-prod` then `npm start` 
-or
-For Development Mode: 
+* For Development Mode: 
 Use `npm run build-dev`
 
 ## Acknowledgements 
