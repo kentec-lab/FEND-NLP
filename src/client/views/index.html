@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Natural Language Processing</title>
+</head>
+
+<body>
+    <header>
+        <h1>News Article Evaluation with NLP</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter text or paragraph in the form below for analysis:</h2>
+            <form class="" onsubmit="return handleSubmit(event)">
+                <input id="name" type="text" name="input" value="" placeholder="Name">
+                <input id="btn" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+            </form>
+        </section>
+        <section>
+            <strong>Form Results:</strong>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Udacity & Aylien 2020 with &hearts;</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
